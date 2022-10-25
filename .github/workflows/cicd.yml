@@ -8,5 +8,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
-      - name: terraform init
-        run: echo "terraform init"
+      - name: Setup terraform
+        uses: hashicorp/setup-terraform@v2
+      - name: Terraform init
+        id: init
+        run: terraform init
+      - name: Terraform plan
+        id: plan
+        run: terraform plan
