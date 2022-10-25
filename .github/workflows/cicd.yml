@@ -1,14 +1,10 @@
 name: IaC with Terraform
-
 on:
   push:
-    branches:["main"]
-    
-
+    branches: ["main"]
 jobs:
   ci:
-    run-ons: ubuntu-latest
-    
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
