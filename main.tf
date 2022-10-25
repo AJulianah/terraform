@@ -4,14 +4,8 @@ variable "complete_name" {
 	default = "A \n Julianah"
 }
 
-variable "lower_name" {
-	type = string
-	description = "your name"
-	default = var.complete_name
-}
-
 
 output "bonjour" {	
 	description = "salutation"
-	value = lower(chomp(var.lower_name))
+	value = lower(chomp(var.complete_name))
 }
