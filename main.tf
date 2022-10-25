@@ -7,11 +7,11 @@ variable "complete_name" {
 variable "lower_name" {
 	type = string
 	description = "your name"
-	default = lower(var.complete_name)
+	default = var.complete_name
 }
 
 
 output "bonjour" {	
 	description = "salutation"
-	value = chomp(var.lower_name)
+	value = lower(chomp(var.lower_name))
 }
