@@ -1,0 +1,16 @@
+name: IaC with Terraform
+
+on:
+  push:
+    branches:["main"]
+    
+
+jobs:
+  ci:
+    run-ons: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: terraform init
+        run: echo "terraform init"
