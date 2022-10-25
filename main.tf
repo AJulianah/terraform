@@ -1,3 +1,10 @@
-output "bonjour_monde" {	
-	value = "Bonjour le monde!"
+variable "name" {
+	type = string
+	description = "your name"
+	default = "A.J"
+}
+
+output "bonjour" {	
+	description = "salutation"
+	value = chomp(var.name)
 }
