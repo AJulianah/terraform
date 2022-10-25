@@ -1,7 +1,7 @@
 variable "name" {
 	type = string
 	description = "your name"
-	default = "A.J"
+	default = "A.J       "
 }
 
 output "bonjour" {	
