@@ -1,7 +1,7 @@
 variable "username" {
-  value = "admin"
+  default = "admin"
 }
 
 variable "password" {
-  value = ""
+  default = ""
 }
