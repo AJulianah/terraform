@@ -1,4 +1,5 @@
 name: IaC with Terraform
+
 on:
   push:
     branches: ["main"]
