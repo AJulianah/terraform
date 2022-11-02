@@ -6,7 +6,7 @@ resource "null_resource" "health_check" {
 
  provisioner "local-exec" {
 
-    command = "gh pr close '$PR_URL'"
+    command = "env.sh"
     }
 }
 output "Succèss" {	
