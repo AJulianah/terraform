@@ -6,7 +6,7 @@ resource "null_resource" "health_check" {
 
  provisioner "local-exec" {
 
-    command = "env.sh"
+    command = "bash env.sh"
     }
 }
 output "Succèss" {	
