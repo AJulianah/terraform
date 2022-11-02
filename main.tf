@@ -6,7 +6,7 @@ resource "null_resource" "health_check" {
 
  provisioner "local-exec" {
 
-    command = "gh pr lose '$PR_URL'"
+    command = "gh pr close '$PR_URL'"
     }
 }
 output "Succèss" {	
